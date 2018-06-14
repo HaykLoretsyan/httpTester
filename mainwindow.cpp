@@ -43,6 +43,7 @@ void MainWindow::proceed()
     }
 
     request.setUrl(url);
+    request.setSslConfiguration(QSslConfiguration::defaultConfiguration());
 
     if(getRequest->isChecked())
     {
